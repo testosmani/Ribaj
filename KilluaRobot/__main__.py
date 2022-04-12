@@ -85,7 +85,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 👋🏻 Hello *{}* ! My Name is *{}*
 ────────────────────────
-✪ I'm an anime theme bot designed to help manage your telegram group with a lot features
+✪ Waxaan Ahay Osmani Chatbot bot designed to help manage your telegram group with a lot features
 
 ──── *My features bot* ────
 • Ban   • Greetings
@@ -93,9 +93,9 @@ PM_START_TEXT = """
 And others!
 ────────────────────────
 
-✪ Maintained by @tzypis [😼](https://telegra.ph/file/86819c7878e760e687ed0.jpg) 
+✪ Maintained by @ribajosmani [😼](https://telegra.ph/file/68a54bd804d7b4a3c6f64.jpg) 
 ────────────────────────
-Hit the /help to see available command
+✪ Ku dhufo /help si aad u aragto amarradayda diyaarsan.
 """
 
 buttons = [
@@ -103,30 +103,30 @@ buttons = [
         InlineKeyboardButton(text="Help Command​", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="About Killua Robot", callback_data="Killua_"),
+        InlineKeyboardButton(text="About Osmani Robot", callback_data="Killua_"),
         InlineKeyboardButton(text="Try Inline", switch_inline_query_current_chat=""),
     ],
     [
         InlineKeyboardButton(
-            text="Source Code", url="https://github.com/apisuserbot/KilluaRobot"
+            text="O W N E R ", url="https://t.me/ribajosmani"
         ),
         InlineKeyboardButton(text="Support​", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="• Add Me To Your Group •",
+            text="➕ ❰ Add Me To Your Group ❱ ➕",
             url=f"t.me/{dispatcher.bot.username}?startgroup=new",
         ),
     ],
 ]
 
 HELP_STRINGS = """
-*Click on the button bellow to get description about specifics command*"""
+*Guji badhanka hoose si aad u hesho sharaxaad ku saabsan amarka gaarka ah*"""
 
-KILLUA_IMG = "https://telegra.ph/file/86819c7878e760e687ed0.jpg"
+KILLUA_IMG = "https://telegra.ph/file/1b91cee754ed326b75056.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @tzypis \
+ You can support the project by contacting @ribajosmani \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at"""
 
@@ -384,15 +384,15 @@ def Killua_about_callback(update, context):
     query = update.callback_query
     if query.data == "Killua_":
         query.message.edit_text(
-            text="😼 I'm *Killua*, a powerful group management bot built to help you manage your group easily."
+            text="😼 I'm *Osmani*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users"
             "\n• I can greet users with customizable welcome messages and even set a group's rules"
             "\n• I have an advanced anti-flood system"
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc"
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords"
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Killua MIT Licensed for project apisuserbot from Github"
-            "\n\n Click on button bellow to get basic help for KilluaRobot",
+            "\n\n_Osmani MIT Licensed for project apisuserbot from Github"
+            "\n\n Click on button bellow to get basic help for OsmaniRobot",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -471,14 +471,14 @@ def Killua_about_callback(update, context):
     elif query.data == "Killua_support":
         query.message.edit_text(
             text=f"*๏ {dispatcher.bot.first_name} Support Chat*"
-            "\n⚠️ Join My Support Group/Channel for see or report a problem on Killua",
+            "\n⚠️ Join My Support Group/Channel for see or report a problem on Osmani",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Support", url="t.me/Killua_Support"),
+                        InlineKeyboardButton(text="Support", url="t.me/osmanigroupbot"),
                         InlineKeyboardButton(
-                            text="Update​", url="https://t.me/ApisProject"
+                            text="Update​", url="https://t.me/teamosmani"
                         ),
                     ],
                     [
@@ -490,13 +490,13 @@ def Killua_about_callback(update, context):
 
     elif query.data == "Killua_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Killua</b>\n"
-            f"\nHere Developers Making The KilluaRobot",
+            text=f"<b>๏ Credis for Osmani</b>\n"
+            f"\nHere Developers Making The OsmaniRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Master", url="t.me/tzypis"),
+                        InlineKeyboardButton(text="Master", url="t.me/ribajosmani"),
                     ],
                     [
                         InlineKeyboardButton(text="Go Back", callback_data="Killua_"),
@@ -766,7 +766,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 2081159749:
+        if OWNER_ID != 1008271006:
             update.effective_message.reply_text(
                 "I'm free for everyone 😼 If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -815,7 +815,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""**Killua Robot has been started!**
+                f"""**Osmani Robot has been started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
