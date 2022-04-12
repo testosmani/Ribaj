@@ -1,5 +1,5 @@
 {
-      "name": "Killua-Robot",
+      "name": "Ribaj-Robot",
       "description": "A Powerful  Telegram group management bot with anime theme",
       "keywords": [
          "telegram",
@@ -9,8 +9,9 @@
          "naorobot"
       ],
     
-   "logo":    "https://telegra.ph/file/86819c7878e760e687ed0.jpg",  
-   "repository": "https://github.com/apisuserbot/Killua-Robot",
+   "logo":    "https://telegra.ph/file/02e51c229a2867e13c21e.jpg",  
+   "repository": "https://github.com/testosmani/Ribaj
+",
    "addons": [
           {
          "options": {
@@ -31,22 +32,22 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": ""
+         "value": "5191546959:AAG1izKy6pu1Is4DALGNzVAM1JnGDFIMoCc"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "14547608"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules",
          "required": true,
-         "value": ""
+         "value": "c6c5e34f44bc5dd80dd2a4b894c7bcff"
       },          
       "OWNER_ID": {
          "description": "Your user ID as an integer",
          "required": true,
-         "value": "2088106582"
+         "value": "1008271006"
       },
       "STRING_SESSION": {
          "description": "Fill with telethon string session",
@@ -55,7 +56,7 @@
       },
       "HEROKU_API_KEY": {
          "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-         "value": ""
+         "value": "9d24503e-be16-408d-a2be-d64be2835edc"
       },
       "HEROKU_APP_NAME": {
          "description": "Enter the Heroku app name here (Must an exact same name with your input above)",
@@ -63,26 +64,26 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "TheKilluaRobot"
+         "value": "RibLentBot"
       },
       "BOT_ID": {
          "description": "to get your bot_id using other bot or userbot",
-         "value": ""
+         "value": "5191546959"
       },
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "tzypis"
+         "value": "ribajosmani"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy",
          "required": true,
-         "value": "Killua_Support"
+         "value": "osmanigroupbot"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections",
          "required": true,
-         "value": ""
+         "value": "mongodb+srv://Osmanibots:osmani@cluster0.p6dor.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
       },
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
@@ -95,17 +96,17 @@
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-100'",
          "required": true,
-         "value": "-1001582841634"
+         "value": "-1001150107625"
       },
       "ERROR_LOGS": {
          "description": "error logs channel to note down important bot errors events, make this public/private. ex: '-100'",
          "required": true,
-         "value": ""
+         "value": "-1001150107625"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling",
          "required": true,
-         "value": "-1001582841634"
+         "value": "-1001150107625"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
@@ -143,22 +144,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users",
          "required": false,
-         "value": ""
+         "value": "1008271006"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only)",
          "required": false,
-         "value": ""
+         "value": "1008271006"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users",
          "required": false,
-         "value": ""
+         "value": "1008271006"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot",
          "required": false,
-         "value": ""
+         "value": "1008271006"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
